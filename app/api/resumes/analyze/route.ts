@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
-import Resume from "@/lib/models/Resume";
-import Job from "@/lib/models/Job"; 
-import { analyzeResume } from "@/utils/analyzeResume";
 
+import { connectDB } from "utils/connectDB";
+
+import Resume from "app/lib/models/Resume";
+import Job from "app/lib/models/Job";
+import { analyzeResume } from "utils/analyzeResume";
 
 
 export async function POST(req: Request) {

@@ -74,8 +74,9 @@ export async function POST(req: Request) {
 }*/
 
 
-import { connectDB } from "@/lib/db";
-import User from "@/lib/models/User";
+
+import { connectDB } from "utils/connectDB";
+import User from "app/lib/models/User";
 import bcrypt from "bcryptjs";
 import { NextResponse } from "next/server";
 

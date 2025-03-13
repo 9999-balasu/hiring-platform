@@ -15,8 +15,9 @@
     import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { connectDB } from "@/lib/db";  // Add this import
-import User from "@/lib/models/User";
+
+import { connectDB } from "utils/connectDB";
+import User from "app/lib/models/User";
 
 export async function POST(req: NextRequest) {
   await connectDB();  // Now connectDB is defined

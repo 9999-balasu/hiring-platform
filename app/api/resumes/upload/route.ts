@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
-import Resume from "@/lib/models/Resume";
+
+import { connectDB } from "utils/connectDB";
+import Resume from "app/lib/models/Resume";
 import pdfParse from "pdf-parse";
 
 // Function to extract details from resume text

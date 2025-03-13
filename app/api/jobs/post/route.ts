@@ -4,9 +4,9 @@
 
 
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db"; // Corrected import path
-import Job from "@/lib/models/Job";
 
+import { connectDB } from "utils/connectDB";
+import Job from "app/lib/models/Job";
 export async function POST(req: Request) {
   try {
     await connectDB();

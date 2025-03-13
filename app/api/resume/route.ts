@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
+import { connectDB } from "utils/connectDB";
 
 import pdfParse from "pdf-parse";
-import Resume from "@/lib/models/Resume";
+import Resume from "app/lib/models/Resume";
 
 
 

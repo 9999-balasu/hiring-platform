@@ -40,9 +40,9 @@ export async function POST(req: NextRequest) {
 
 
 import { NextRequest, NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
-import Resume from "@/lib/models/Resume";
 
+import { connectDB } from "utils/connectDB";
+import Resume from "app/lib/models/Resume";
 export async function POST(req: NextRequest) {
   try {
     await connectDB();
