@@ -2,15 +2,16 @@
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import SearchBar from "@/components/SearchBar";
-import JobForm from "@/components/JobForm";
-import JobCard from "@/components/JobCard";
-import ApplicationForm from "@/components/ApplicationForm";
+import Navbar from "./components/Navbar";
+
+import SearchBar from "./components/SearchBar";
+import JobForm from "./components/JobForm";
+import JobCard from "./components/JobCard";
+import ApplicationForm from "./components/ApplicationForm";
 import "./globals.css";
 import { useState } from "react";
-import Dashboard from "@/components/Dashboard"; 
-import ResumeUpload from "@/components/ResumeUpload";
+import Dashboard from "./components/Dashboard"; 
+import ResumeUpload from "./components/ResumeUpload";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

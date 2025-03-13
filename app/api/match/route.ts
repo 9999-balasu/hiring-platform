@@ -40,10 +40,10 @@ export async function GET(req: Request) {
 }*/
 
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
-import Candidate from "@/lib/models/Candidate";
-import Job from "@/lib/models/Job";
 
+import { connectDB } from "utils/connectDB";
+import Candidate from "app/lib/models/Candidate";
+import Job from "app/lib/models/Job";
 export async function GET(req: Request) {
   try {
     await connectDB();
