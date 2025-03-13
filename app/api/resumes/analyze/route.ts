@@ -4,7 +4,7 @@ import Resume from "@/lib/models/Resume";
 import Job from "@/lib/models/Job"; 
 import { analyzeResume } from "@/utils/analyzeResume";
 
-analyzeResume
+
 
 export async function POST(req: Request) {
   try {
