@@ -24,8 +24,9 @@ export async function POST(req: Request) {
 
 
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db";
-import Application from "@/lib/models/Application";
+
+import { connectDB } from "utils/connectDB";
+import Application from "app/lib/models/Application";
 
 export async function POST(req: Request) {
   try {

@@ -1,3 +1,6 @@
+
+
+
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -15,7 +18,8 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@/models/*": ["./lib/models/*"]
+      "@/models/*": ["app/lib/models/*"],
+      "@/lib/*": ["app/lib/*"]
     },
     "plugins": [
       {
